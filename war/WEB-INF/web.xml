@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
+    <!-- Servlets --> 
+	<servlet>
+    	<servlet-name>appConfigService</servlet-name>
+    	<servlet-class>tms2.server.AppConfigServiceImpl</servlet-class>
+  	</servlet>
+	
+	<servlet>
+    	<servlet-name>accessControlService</servlet-name>
+    	<servlet-class>tms2.server.accesscontrol.AccessControlServiceImpl</servlet-class>
+  	</servlet>  
+
+	<servlet>
+    	<servlet-name>sessionService</servlet-name>
+    	<servlet-class>tms2.server.session.SessionServiceImpl</servlet-class>
+  	</servlet> 
+
+	<servlet>
+    	<servlet-name>userService</servlet-name>
+    	<servlet-class>tms2.server.user.UserServiceImpl</servlet-class>
+  	</servlet> 
+	
+	<servlet>
+    	<servlet-name>userCategoryService</servlet-name>
+    	<servlet-class>tms2.server.usercategory.UserCategoryServiceImpl</servlet-class>
+  	</servlet> 
+	
+	<servlet>
+    	<servlet-name>recordService</servlet-name>
+    	<servlet-class>tms2.server.record.RecordServiceImpl</servlet-class>
+  	</servlet> 
+  	
+	<servlet>
+    	<servlet-name>fieldService</servlet-name>
+    	<servlet-class>tms2.server.field.FieldServiceImpl</servlet-class>
+  	</servlet> 
+  	
+	<servlet>
+    	<servlet-name>termBaseService</servlet-name>
+    	<servlet-class>tms2.server.termbase.TermBaseServiceImpl</servlet-class>
+  	</servlet>	
+	
+	<servlet>
+    	<servlet-name>projectService</servlet-name>
+    	<servlet-class>tms2.server.project.ProjectServiceImpl</servlet-class>
+  	</servlet>	
+	
+	<servlet>
+    	<servlet-name>accessRightService</servlet-name>
+    	<servlet-class>tms2.server.accessright.AccessRightServiceImpl</servlet-class>
+  	</servlet>	
+	
+	<servlet>
+    	<servlet-name>filterService</servlet-name>
+    	<servlet-class>tms2.server.filter.FilterServiceImpl</servlet-class>
+  	</servlet>	
+		
+	<servlet>
+    	<servlet-name>exportService</servlet-name>
+    	<servlet-class>tms2.server.export.ExportServiceImpl</servlet-class>
+  	</servlet>		
+	
+	<servlet>
+    	<servlet-name>captchaService</servlet-name>
+    	<servlet-class>tms2.server.captcha.CaptchaServiceImpl</servlet-class>
+  	</servlet>		
+		
+	<!--  Servlet mappings -->		
+	<servlet-mapping>
+    	<servlet-name>appConfigService</servlet-name>
+    	<url-pattern>/tms2.TMSIntro/appConfigService</url-pattern>
+  	</servlet-mapping>
+  
+  	<servlet-mapping>
+    	<servlet-name>appConfigService</servlet-name>
+    	<url-pattern>/tms2.TermBrowser/appConfigService</url-pattern>
+  	</servlet-mapping>
+    
+  	<servlet-mapping>
+    	<servlet-name>appConfigService</servlet-name>
+    	<url-pattern>/tms2.AdminInterface/appConfigService</url-pattern>
+  	</servlet-mapping>
+  	
+	<servlet-mapping>
+    	<servlet-name>accessControlService</servlet-name>
+    	<url-pattern>/tms2.TMSIntro/accessControlService</url-pattern>
+  	</servlet-mapping>
+  
+  	<servlet-mapping>
+    	<servlet-name>accessControlService</servlet-name>
+    	<url-pattern>/tms2.TermBrowser/accessControlService</url-pattern>
+  	</servlet-mapping>
+    
+  	<servlet-mapping>
+    	<servlet-name>accessControlService</servlet-name>
+    	<url-pattern>/tms2.AdminInterface/accessControlService</url-pattern>
+  	</servlet-mapping>	
+
+	<servlet-mapping>
+    	<servlet-name>sessionService</servlet-name>
+    	<url-pattern>/tms2.TMSIntro/sessionService</url-pattern>
+  	</servlet-mapping>
+  
+  	<servlet-mapping>
+    	<servlet-name>sessionService</servlet-name>
+    	<url-pattern>/tms2.TermBrowser/sessionService</url-pattern>
+  	</servlet-mapping>
+    
+  	<servlet-mapping>
+    	<servlet-name>sessionService</servlet-name>
+    	<url-pattern>/tms2.AdminInterface/sessionService</url-pattern>
+  	</servlet-mapping>	
+       
+  	<servlet-mapping>
+    	<servlet-name>userService</servlet-name>
+    	<url-pattern>/tms2.AdminInterface/userService</url-pattern>
+  	</servlet-mapping>	
+	
+  	<servlet-mapping>
+    	<servlet-name>userCategoryService</servlet-name>
+    	<url-pattern>/tms2.AdminInterface/userCategoryService</url-pattern>
+  	</servlet-mapping>	
+  	
+  	<servlet-mapping>
+    	<servlet-name>recordService</servlet-name>
+    	<url-pattern>/tms2.TermBrowser/recordService</url-pattern>
+  	</servlet-mapping>
+      	
+  	<servlet-mapping>
+    	<servlet-name>fieldService</servlet-name>
+    	<url-pattern>/tms2.TermBrowser/fieldService</url-pattern>
+  	</servlet-mapping>
+  		
+  	<servlet-mapping>
+    	<servlet-name>fieldService</servlet-name>
+    	<url-pattern>/tms2.AdminInterface/fieldService</url-pattern>
+  	</servlet-mapping>  	
+  	
+  	<servlet-mapping>
+    	<servlet-name>termBaseService</servlet-name>
+    	<url-pattern>/tms2.TermBrowser/termBaseService</url-pattern>
+  	</servlet-mapping>  	
+  	
+  	<servlet-mapping>
+    	<servlet-name>termBaseService</servlet-name>
+    	<url-pattern>/tms2.AdminInterface/termBaseService</url-pattern>
+  	</servlet-mapping>   	
+  		
+  	<servlet-mapping>
+    	<servlet-name>projectService</servlet-name>
+    	<url-pattern>/tms2.TermBrowser/projectService</url-pattern>
+  	</servlet-mapping>  	
+  	
+  	<servlet-mapping>
+    	<servlet-name>projectService</servlet-name>
+    	<url-pattern>/tms2.AdminInterface/projectService</url-pattern>
+  	</servlet-mapping>   	
+  		
+  	<servlet-mapping>
+    	<servlet-name>accessRightService</servlet-name>
+    	<url-pattern>/tms2.TermBrowser/accessRightService</url-pattern>
+  	</servlet-mapping>  	
+  	
+  	<servlet-mapping>
+    	<servlet-name>accessRightService</servlet-name>
+    	<url-pattern>/tms2.AdminInterface/accessRightService</url-pattern>
+  	</servlet-mapping>   	
+  	
+  	<servlet-mapping>
+    	<servlet-name>filterService</servlet-name>
+    	<url-pattern>/tms2.TermBrowser/filterService</url-pattern>
+  	</servlet-mapping>   
+  	
+  	<servlet-mapping>
+    	<servlet-name>exportService</servlet-name>
+    	<url-pattern>/tms2.TermBrowser/exportService</url-pattern>
+  	</servlet-mapping>    	
+  	
+  	<servlet-mapping>
+    	<servlet-name>captchaService</servlet-name>
+    	<url-pattern>/tms2.TermBrowser/captchaService</url-pattern>
+  	</servlet-mapping>     	
+  	
+  	 <!-- Upload Servlet and Mapping -->
+  	<context-param>
+    	<!-- max size of the upload request -->
+    	<param-name>maxSize</param-name>
+    	<param-value>3145728</param-value>
+  	</context-param>
+  	<context-param>
+    	<!-- Useful in development mode to slow down the uploads in fast networks.
+         	Put the number of milliseconds to sleep in each block received in the server.
+         	false or 0, means don't use slow uploads  -->
+    	<param-name>slowUploads</param-name>
+    	<param-value>false</param-value>
+  	</context-param>
+
+  	<servlet>
+    	<servlet-name>uploadServlet</servlet-name>
+    	<servlet-class>tms2.server.record.UploadServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>uploadServlet</servlet-name>
+    	<url-pattern>*.gupld</url-pattern>
+  	</servlet-mapping>
+  	  		
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>	 
+	</welcome-file-list>
+	
+	<!-- Context listener -->
+  	<listener>
+    	<listener-class>tms2.server.session.SessionPoll</listener-class>
+  	</listener>
+	
+  	<session-config>
+  		<session-timeout>120</session-timeout>
+  	</session-config>  
+  	
+  	<!-- Start up servlet -->
+  	<servlet>
+  		<servlet-name>LoggerStarter</servlet-name>
+  		<servlet-class>tms2.server.logging.LoggerStarter</servlet-class>
+  		<load-on-startup>1</load-on-startup>
+  	</servlet>	
+  	
+  	<servlet>
+    	<servlet-name>SimpleCaptcha</servlet-name>
+    	<servlet-class>tms2.server.captcha.CaptchaServlet</servlet-class>
+  	</servlet>
+
+  	<servlet-mapping>
+    	<servlet-name>SimpleCaptcha</servlet-name>
+    	<url-pattern>/verify_image.jpg</url-pattern>
+  	</servlet-mapping>  
+  	
+	<filter>
+	 	<filter-name>gwtCacheControlFilter</filter-name>
+	 	<filter-class>tms2.server.GWTCacheControlFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+ 		<filter-name>gwtCacheControlFilter</filter-name>
+ 		<url-pattern>/*</url-pattern>
+	</filter-mapping>	
+	
+</web-app>

@@ -1,0 +1,124 @@
+<html><head>
+   <title>Input Model Workbench</title>
+   <meta name="generator"  content="HelpMaker">
+   <meta name="keywords"  content="InputModelWorkBench">
+   <link rel="stylesheet"  type="text/css"  href="hm.css"></head>
+<body bgcolor="#FFFFFF">
+
+<table width="100%"  border="0"  cellspacing="0"  cellpadding="2"  bgcolor="#BBDDFF">
+  <tr>
+    <td align="left">
+      <div align="left"><font face="Arial"  color="#010101"  size="4"><span style=" font-size:16pt; font-family:Arial; color:#010101"><b>Input Model Workbench</b></span></font></div>
+
+    </td>
+    <td align="right">
+      <font face="Arial"  size="2">
+        <a href="Fields.html">Previous</a>&nbsp;<a href="Introduction.html">Top</a>&nbsp;<a href="AccessControl.html">Next</a>
+      </font>
+    </td>
+  </tr></table>
+<hr><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">A Record is created and edited using an<i> input model</i>, which determines all the fields that 
+should be available in the record. The input model specifies which record fields, index 
+fields and attribute fields should be available when creating or editing a record.</span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">The input model also defines which fields are mandatory and implements the access 
+control for each field. The <i>Input Model Workbench</i> is divided into three panels: the <i>Fields</i> 
+Palette, the <i>Assembly Area</i> and the <i>Properties</i> Panel. Each of these is discussed in 
+more detail below. </span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"><b><u>Fields Palette</u></b></span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">This panel displays all the fields available for use in an input model. The fields are 
+ordered into groups determined by their type: record fields, index fields and attribute 
+fields. By clicking on one of the tabs</span></font><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">,</span></font><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"> the relevant list of fields will be displayed</span></font><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">.</span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><img src="InputModelWorkBenchb1.PNG"  alt="graphic"><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Symbol"  color="#010101"><span style=" font-size:11pt; font-family:Symbol; color:#010101">&middot;</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">&nbsp;&nbsp; &nbsp;By double</span></font><font face="Calibri"  color="#010101"><span style=" font-size:11pt; font-family:Calibri; color:#010101">-</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">clicking on a field in the <i>Fields Palette</i>, the field will be inserted into the 
+input model.</span></font><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Symbol"  color="#010101"><span style=" font-size:11pt; font-family:Symbol; color:#010101">&middot;</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">&nbsp;&nbsp; &nbsp;When an index field is added to an input model</span></font><font face="Calibri"  color="#010101"><span style=" font-size:11pt; font-family:Calibri; color:#010101">,</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101"> a synonym field will automatically be 
+attached to the index field.</span></font><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Symbol"  color="#010101"><span style=" font-size:11pt; font-family:Symbol; color:#010101">&middot;</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">&nbsp;&nbsp; &nbsp;By double</span></font><font face="Calibri"  color="#010101"><span style=" font-size:11pt; font-family:Calibri; color:#010101">-</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">clicking on an attribute field</span></font><font face="Calibri"  color="#010101"><span style=" font-size:11pt; font-family:Calibri; color:#010101">,</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101"> it will be added to the index field that is 
+currently selected.</span></font><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Symbol"  color="#010101"><span style=" font-size:11pt; font-family:Symbol; color:#010101"><b>&middot;</b></span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101"><b>&nbsp;&nbsp; &nbsp;</b>Fields can be reordered by dragging and dropping them into the new position. 
+However, if you move an index field the attribute fields associated with it will <b>NOT</b> 
+move with it, but will remain and become associated with the index field directly 
+above them. The same will happen if you drop an index field between another index 
+field and its attribute fields.</span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101"><b><u>Assembly Area</u></b></span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">The <i>Assembly Area</i> is the window that displays the fields of the current input model.</span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><img src="InputModelWorkBenchb2.PNG"  alt="graphic"><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">At the top of the <i>Assembly Area</i></span></font><font face="Calibri"  color="#010101"><span style=" font-size:11pt; font-family:Calibri; color:#010101">,</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101"> there is a <i>name box</i> in which the name of a new input 
+model can be entered. If an existing input model is selected</span></font><font face="Calibri"  color="#010101"><span style=" font-size:11pt; font-family:Calibri; color:#010101">,</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101"> the name of the input model 
+will be displayed. To the right of the name box is a drop-down list containing the names 
+of all the <i>existing input models</i>. This drop-down list can be used to select an input model 
+for editing. </span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">You can also create a new input model by using an existing model as a template. This 
+can be done by selecting the existing input model from the drop-down list, making the 
+necessary changes and<i> </i>then<i> </i>changing the input model name <b>BEFORE SAVING</b> it.</span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">The <i>Record Fields </i>area is under the <i>name box </i>and displays all the record fields for the 
+current input model.</span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">The <i>Index Fields </i>area is under the <i>Record Fields</i> area and contains all the index fields</span></font><font face="Calibri"  color="#010101"><span style=" font-size:11pt; font-family:Calibri; color:#010101">,</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101"> 
+as well as their attribute fields for the current input model. The English index field will 
+automatically be added to a new input model</span></font><font face="Calibri"  color="#010101"><span style=" font-size:11pt; font-family:Calibri; color:#010101">,</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101"> as every record must have an English 
+term.</span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">Click on the <b><i>Delete...</i></b> button to delete the selected field. Click on the <b><i>New...</i></b> button 
+to 
+clear the Assembly Area for the creation of a new input model. Any unsaved changes to 
+the previous model will be lost. Click on the <b><i>Save...</i></b> button to save a new or edited input 
+model.</span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101"><b><u>Properties Panel</u></b></span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">The <i>Properties Panel </i>displays the properties of the selected field.</span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">The table below lists the </span></font><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">properties 
+displayed in this panel</span></font><font face="Arial"  color="#010101"><span style=" font-size:11pt; font-family:Arial; color:#010101">:</span></font><table border="1"  width="625"  style="border-collapse: collapse; border: none">
+    <tr>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"><b>Field Name</b></span></font></div>
+    </td>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">The name of the selected field.</span></font></div>
+    </td></tr>
+    <tr>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"><b>Field Type</b></span></font></div>
+    </td>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">The type of field.</span></font></div>
+    </td></tr>
+    <tr>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"><b>Field Data Type</b></span></font></div>
+    </td>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">The type of data the selected field can contain.</span></font></div>
+    </td></tr>
+    <tr>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"><b>Access Control</b></span></font></div>
+    </td>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">Open the<i> </i></span></font><a href="AccessControl.html"><font face="Arial"  color="#0000ff"><span style=" font-size:11pt; font-family:Arial; color:#0000ff"><i><u>Access 
+    Control Dialog</u></i></span></font></a><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"><i> </i>where you can set the access rights for 
+    the selected field.</span></font></div>
+    </td></tr>
+    <tr>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"><b>Maximum 
+    Length</b></span></font></div>
+    </td>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">The maximum length of the field contents is shown.</span></font></div>
+    </td></tr>
+    <tr>
+    <td valign="top"  height="35"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"><b>Default Value</b></span></font></div>
+    </td>
+    <td valign="top"  height="35"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">Assign a default value to a field. When a new record is created, this field 
+    will already contain the default value.</span></font></div>
+    </td></tr>
+    <tr>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"><b>Minimum 
+    Occurrence</b></span></font></div>
+    </td>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">The minimum number of times this field can appear in a record. The 
+    normal value is zero. If a field is mandatory, a value of 1 should be 
+    entered.</span></font></div>
+    </td></tr>
+    <tr>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"><b>Maximum 
+    Occurrence</b></span></font></div>
+    </td>
+    <td valign="top"  style="border: solid #010101 1px;">
+    <div align="left"  style="margin-left:1mm; margin-right:0mm; text-indent:0mm; margin-top:1.76mm; margin-bottom:1.76mm;"><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">The maximum number of times this field can occur in a record.</span></font></div>
+    </td></tr></table><p style="margin-left:25mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000"><br></span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"><b><u>Creating and using a new input model</u></b></span></font><p style="margin-left:0mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">The following steps need to be completed in order to create a new input model: </span></font><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">1.&nbsp; &nbsp;&nbsp;</span></font><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">Insert 
+the record fields</span></font><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">.</span></font><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">2.&nbsp; &nbsp;&nbsp;</span></font><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">Insert 
+the index fields</span></font><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">.</span></font><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">3.&nbsp; &nbsp;&nbsp;</span></font><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">Insert 
+the attribute fields for each of the index fields</span></font><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">.</span></font><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">4.&nbsp; &nbsp;&nbsp;</span></font><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">Enter 
+a name for the new input model</span></font><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">.</span></font><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">5.&nbsp; &nbsp;&nbsp;</span></font><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">Save 
+the input model by clicking on the <b><i>Save</i></b> button</span></font><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">.</span></font><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">6.&nbsp; &nbsp;Specify the access rights for each of the fields in the input model.</span></font><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">7.&nbsp; &nbsp;&nbsp;</span></font><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">Go to 
+the Termbrowser</span></font><font face="Calibri"><span style=" font-size:11pt; font-family:Calibri; color:#000000">.</span></font><p style="margin-left:6mm; margin-right:0mm; text-indent:-6mm; margin-top:0.00mm; margin-bottom:3.52mm;line-height: 115%; "><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000">8.&nbsp; &nbsp;</span></font><a href="CreatingaRecord.html"><font face="Arial"  color="#0000ff"><span style=" font-size:11pt; font-family:Arial; color:#0000ff"><u>Create 
+a new record</u></span></font></a><font face="Arial"><span style=" font-size:11pt; font-family:Arial; color:#000000"> using the newly created input model.</span></font><div align="left"><font face="Arial"><span style=" font-size:12pt; font-family:Arial; color:#000000"><b><br></b></span></font></div><div align="left"><font face="Arial"><span style=" font-size:12pt; font-family:Arial; color:#000000"><b>Remember:</b></span><span style=" font-size:11pt; font-family:Arial; color:#000000">&nbsp; You cannot edit or modify an input model that is in use, which means that 
+an input model cannot be edited once a record has been created using that input model. 
+You can however modify the properties of a field within an input model that is in use.</span></font></div><div align="left">&nbsp;&nbsp;</div>
+
+</body></html>

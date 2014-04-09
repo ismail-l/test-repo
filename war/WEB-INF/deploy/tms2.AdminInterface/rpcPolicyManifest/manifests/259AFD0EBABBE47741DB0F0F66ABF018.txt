@@ -1,0 +1,2 @@
+serviceClass: tms2.client.service.CaptchaService
+path: 67FDF2C01B6A94033C26B7A1F64EF287.gwt.rpc

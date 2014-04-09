@@ -1,0 +1,2 @@
+serviceClass: tms2.client.service.AppConfigService
+path: E4AD7BCD3A79500E9EA9E123A02F5254.gwt.rpc

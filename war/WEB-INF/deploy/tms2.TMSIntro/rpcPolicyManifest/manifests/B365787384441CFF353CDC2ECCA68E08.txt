@@ -1,0 +1,2 @@
+serviceClass: tms2.client.service.AccessRightService
+path: 2DCAEA26B6CB60031D4BAA376AD279AE.gwt.rpc

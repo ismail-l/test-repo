@@ -1,0 +1,2 @@
+serviceClass: tms2.client.service.FilterService
+path: FAE4DFBBA360E5539B342D2ADD43C3CB.gwt.rpc

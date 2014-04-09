@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TBXXCS SYSTEM "tbxxcsdtd.dtd">
+<TBXXCS name="Autshumato TMS XCS" version="1.0" lang="eng">
+    <header>
+        <title>XCS for the Autshumato TMS TBX support modified from the TBX default XCS (extensible constraint specification) file Version 02. (Filename:TBXXCSV02.XCS)
+        </title>
+		<!-- Here are the added and modified data categories as they differ from the standard.
+		The entries are ordered as follows: dataCategoryName [metaDataCategory] Description 
+		
+		adminNote [admin] Holds an administrative note
+		noteToManager [admin] Holds a note for the Manager.
+		recordEditingNote [admin] Holds a note that relates to the editing of the record.
+		publication [admin] Gives the name of the book/article/termlist/etc. in which the data
+		of this record is/will be published.
+		International Scientific Term [term] In the Autshumato TMS the IST is treated as just
+		another language.
+		termAcceptability [termNote] Indicates how accepted the specified term is.
+		termStatus [admin] Indicates whether the term has been verified.
+		formula [termNote] Holds a mathematical or scientific formula.
+		note [termNote] General note on the term.
+		plural [termNote] The plural of the term.
+		fullForm [termNote] The full form of the term.
+		researchNote [termNote] Contains notes on the research of this term.
+		totSource [admin] Translation-Oriented Terminography note of the source.
+		sourceDefinition [descrip] The definition of the source of the term.
+		text [descrip] Just holds normal text that relates to the term.
+		collocation [termNote] Modified from existing data category in order for it to hold
+		its own data.
+		timeLabel [termNote] Shows a time assosiated with a term.
+		editingNote [termNote] Holds a note on the editing of a term.
+		-->
+    </header>
+    <!-- All languages used in a TBX document instance must be declared in the elements below.
+The following declarations are for demonstration purposes, and the simple two character language
+code is used so that this XCS file works with the sample TBX files. You can use any
+language code format that is allowed by IETF RFC 4646 or its successor. -->
+    <languages>
+        <langInfo>
+            <langCode>eng</langCode>
+            <langName>English</langName>
+        </langInfo>
+        <langInfo>
+            <langCode>afr</langCode>
+            <langName>Afrikaans</langName>
+        </langInfo>
+        <langInfo>
+            <langCode>nbl</langCode>
+            <langName>IsiNdebele</langName>
+        </langInfo>
+        <langInfo>
+            <langCode>xho</langCode>
+            <langName>IsiXhosa</langName>
+        </langInfo>
+        <langInfo>
+            <langCode>zul</langCode>
+            <langName>IsiZulu</langName>
+        </langInfo>
+        <langInfo>
+            <langCode>nso</langCode>
+            <langName>Sepedi</langName>
+        </langInfo> 
+        <langInfo>
+            <langCode>sot</langCode>
+            <langName>Sesotho</langName>
+        </langInfo>  
+        <langInfo>
+            <langCode>tsn</langCode>
+            <langName>Setswana</langName>
+        </langInfo>  
+        <langInfo>
+            <langCode>ssw</langCode>
+            <langName>Siswati</langName>
+        </langInfo> 
+        <langInfo>
+            <langCode>ven</langCode>
+            <langName>Tshivenda</langName>
+        </langInfo>   
+        <langInfo>
+            <langCode>tso</langCode>
+            <langName>Xitsonga</langName>
+        </langInfo>      
+        <langInfo>
+		<!-- Note that the International Scientific Term does not have an ISO 639-2 code and so the 
+		code is used for an uncoded language -->
+            <langCode>mis</langCode>
+            <langName>International Scientific Term</langName>
+        </langInfo> 
+    </languages>
+	
+    <datCatSet>
+        <!--Data-category constraint specifications are arranged in alphabetial order by the value of the name attribute. -->
+
+		<adminSpec name="adminNote">
+			<contents datatype="plainText"/>
+		</adminSpec>
+		
+		<termNoteSpec name="collocation">
+			<contents datatype="plainText" />
+		</termNoteSpec>
+		
+		<adminSpec name="conceptOrigin" datcatId="ISO12620A-0509">
+			<contents datatype="picklist">afrikaans english french german greek greek/latin latin spanish</contents>
+		</adminSpec>
+		
+		<descripSpec name="context" datcatId="ISO12620A-0503">
+			<contents/>
+			<levels>term</levels>
+		</descripSpec>
+		
+		<adminSpec name="customerSubset" datcatId="ISO12620A-100301">
+            <contents datatype="plainText"/>
+        </adminSpec>
+		
+		<descripSpec name="definition" datcatId="ISO12620A-0501">
+            <contents/>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+		
+		<termNoteSpec name="editingNote">
+			<contents datatype="plainText" />
+		</termNoteSpec>
+
+		<descripSpec name="example" datcatId="ISO12620A-0504">
+            <contents/>
+            <levels>langSet termEntry term</levels>
+        </descripSpec>
+		
+		<termNoteSpec name="formula">
+			<contents datatype="basicText" />
+		</termNoteSpec>
+		
+		<termNoteSpec name="fullForm">
+			<contents datatype="plainText" />
+		</termNoteSpec>
+		
+		<!-- Even though this is a pickList the entries are better depicted as text -->
+		<termNoteSpec name="geographicalUsage" datcatId="ISO12620A-020302">
+            <contents datatype="plainText"/>
+        </termNoteSpec>
+		
+		<adminSpec name="keyword" datcatId="ISO12620A-0904">
+            <contents datatype="plainText"/>
+        </adminSpec>
+		
+		<termNoteSpec name="note">
+			<contents datatype="plainText" />
+		</termNoteSpec>
+		
+		<adminSpec name="noteToManager" >
+			<contents datatype="plainText" />
+		</adminSpec>
+		
+		<adminSpec name="originatingDatabase" datcatId="ISO12620A-102203">
+            <contents datatype="plainText"/>
+        </adminSpec>
+		
+		<termNoteSpec name="partOfSpeech" datcatId="ISO12620A-020201">
+            <contents datatype="picklist">n. v. adj. adv.</contents>
+        </termNoteSpec>
+		
+		<termNoteSpec name="plural" >
+			<contents datatype="plainText" />
+		</termNoteSpec>
+		
+		<adminSpec name="projectSubset" datcatId="ISO12620A-100303">
+            <contents datatype="plainText"/>
+        </adminSpec>
+		
+		<adminSpec name="publication" >
+			<contents datatype="plainText" />
+		</adminSpec>
+		
+		<adminSpec name="recordEditingNote" >
+			<contents datatype="plainText" />
+		</adminSpec>
+		
+		<termNoteSpec name="register" datcatId="ISO12620A-020303">
+            <contents datatype="picklist">technical neutral standard lessFormal colloquial jargon slang vulgar obscene taboo offensive derogatory pejorative rural urban</contents>
+        </termNoteSpec>
+		
+		<termNoteSpec name="researchNote" >
+			<contents datatype="plainText" />
+		</termNoteSpec>
+		
+		<adminSpec name="source" datcatId="ISO12620A-1019">
+            <contents/>
+        </adminSpec>
+		
+		<descripSpec name="sourceDefinition" >
+			<contents datatype="plainText" />
+			<levels>termEntry term</levels>
+		</descripSpec>
+		
+		<descripSpec name="subjectField" datcatId="ISO12620A-04">
+            <contents datatype="plainText"/>
+            <levels>termEntry</levels>
+        </descripSpec>
+		
+		<termNoteSpec name="termAcceptability">
+			<contents datatype="picklist" >preferred recommended notRecommended superseded deprecated seldomUsed obsolete obsolescent historic archaic standardised</contents>
+		</termNoteSpec>
+		
+		<termNoteSpec name="termStatus" >
+			<contents datatype="picklist" >unverified verified</contents>
+		</termNoteSpec>
+		
+		<termNoteSpec name="termType" datcatId="ISO12620A-0201">
+            <contents datatype="picklist">abbreviation acronym shortForm fullForm variant diminutive singular plural circumscription</contents>
+        </termNoteSpec>
+		
+		<termNoteSpec name="text">
+			<contents datatype="plainText" />
+		</termNoteSpec>
+		
+		<termNoteSpec name="timeLabel" >
+			<contents datatype="plainText" />
+		</termNoteSpec>
+		
+		<adminSpec name="totSource" >
+			<contents datatype="plainText" />
+		</adminSpec>
+		
+		<xrefSpec name="xAudio" datcatId="ISO12620A-050502">
+            <contents targetType="external"/>
+        </xrefSpec>
+		
+        <xrefSpec name="xGraphic" datcatId="ISO12620A-050501">
+            <contents targetType="external"/>
+        </xrefSpec>
+    </datCatSet>
+</TBXXCS>

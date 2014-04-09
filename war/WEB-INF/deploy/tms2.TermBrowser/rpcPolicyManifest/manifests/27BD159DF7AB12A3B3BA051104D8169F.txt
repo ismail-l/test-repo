@@ -1,0 +1,2 @@
+serviceClass: tms2.client.service.RecordService
+path: 94742771A9D06AA8714BF6ACA29B0B23.gwt.rpc

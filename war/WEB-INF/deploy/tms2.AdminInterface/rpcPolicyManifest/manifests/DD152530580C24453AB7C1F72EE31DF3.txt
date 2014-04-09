@@ -1,0 +1,2 @@
+serviceClass: tms2.client.service.TermBaseService
+path: 2D9CF90563060B502246FD5139ABBB8C.gwt.rpc

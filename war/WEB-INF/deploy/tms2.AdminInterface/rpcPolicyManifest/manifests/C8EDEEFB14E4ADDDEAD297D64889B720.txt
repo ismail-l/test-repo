@@ -1,0 +1,2 @@
+serviceClass: tms2.client.service.SessionService
+path: 0DD39E7A790A75BBB63BDA9EA8927896.gwt.rpc

@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+
+/* ExtendedTabLayoutPanel */
+
+.mysuso-ExtendedTabLayoutPanel
+{
+	width: 100%;
+}
+
+/* the tab bar element */
+.mysuso-ExtendedTabLayoutPanel .mysuso-ExtendedTabLayoutPanelTabs
+{
+	background-color: #f1f1f1;
+}
+
+/* an individual tab */
+.mysuso-ExtendedTabLayoutPanel .mysuso-ExtendedTabLayoutPanelTab 
+{
+	color: black;
+	margin-right: 7px;
+	cursor: pointer;
+	background-color: #e5e5e5;
+	border-color: silver;
+	border-width: 1px;
+	border-style: solid;
+	border-bottom-width: 0px;
+}
+
+/* an individual tab, selected */
+.mysuso-ExtendedTabLayoutPanel .mysuso-ExtendedTabLayoutPanelTab-selected 
+{
+	font-weight: bold;
+	cursor: default;
+	background-color: #FADB05;
+}
+
+/* an element nested in */
+.mysuso-ExtendedTabLayoutPanel .mysuso-ExtendedTabLayoutPanelTabInner
+{
+	padding: 7px;
+}
+
+/* each tab (useful for styling); applied to all child content widgets */
+.mysuso-ExtendedTabLayoutPanel .mysuso-ExtendedTabLayoutPanelContent
+{
+	color: black;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-color: silver;
+	border-width: 1px;
+	background-color: #efefef;
+	vertical-align: top;
+	padding: 5px;
+}
+
+
+/* RadioButtonPanel */
+.mysuso-RadioButtonPanel
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: black;
+	padding: 5px;
+	cursor: default;
+	border-style: solid;
+	border-color: #f1f1f1;
+	border-width: 1px;
+	cursor: pointer;
+}
+
+/*
+	background-color: #c9e2ec;
+	border-style: dotted;
+	border-color: black;
+*/
+.mysuso-RadioButtonPanel-focussed
+{
+
+}
+
+mysuso-RadioButtonPanelButton
+{
+	cursor: pointer;
+}
+
+mysuso-RadioButtonPanelButton-focussed
+{
+}
+
+/* CheckBoxPanel */
+.mysuso-CheckBoxPanel
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: black;
+	padding: 5px;
+	cursor: default;
+	border-style: solid;
+	border-color: #f1f1f1;
+	border-width: 1px;
+	cursor: pointer;
+}
+
+/*
+	background-color: #c9e2ec;
+	border-style: dotted;
+	border-color: black;
+*/
+.mysuso-CheckBoxPanel-focussed
+{
+
+}
+
+mysuso-CheckBoxPanelButton
+{
+	cursor: pointer;
+}
+
+mysuso-CheckBoxPanelButton-focussed
+{
+
+}
+
+/* ExtendedDatePicker */
+
+.ExtendedDatePickerHeading, .ExtendedDatePickerCurrentValue
+{
+	font-family: Franklin Gothic Medium, Verdana, Arial;
+	font-size: 10pt;
+	color: #505050;
+}
+
+.ExtendedDatePickerHeading
+{
+	font-weight: bold;
+}	
+
+.ExtendedDatePickerHeading-mouseover
+{
+	cursor: hand;
+	cursor: pointer;
+}
+
+.ExtendedDatePickerCurrentValue-mouseover
+{
+	cursor: hand;
+	cursor: pointer;
+}
+
+.ExtendedDatePickerCurrentValueSet
+{
+	color: blue;
+}	
+
+.ExtendedDatePickerArrowButton, .ExtendedDatePickerEditButton, .ExtendedDatePickerResetButton
+{
+	background: transparent;
+	border: none;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.ExtendedDatePickerEditButton-disabled .gwt-Image
+{
+	opacity: 0.4;
+ 	filter: alpha(opacity=40);
+ 	cursor: default;
+}	
+
+.ExtendedDatePickerContent
+{
+   margin-left: 25px;
+}
+
+/** ExtendedGrid **/
+.extendedGrid {
+	background-color: white;
+}
+.extendedGridDisabled {
+	background-color: #efefef;
+	color: inactivecaptiontext
+}
+.extendedGridRightCellBorder {
+	border-right-width: 1px;
+	border-right-color: silver;
+	border-right-style: dotted;	
+}
+.extendedGridTopCellBorder {
+	border-top-width: 1px;
+	border-top-color: silver;
+	border-top-style: dotted;	
+}
+.extendedGridBorder {
+	border-width: 1px;
+	border-color: silver;
+	border-style: dotted;	
+}
+
+/* EvenlySpacedPanel */
+.EvenlySpacedPanel {
+}
+.EvenlySpacedPanelWidgets {
+	margin-left: 5px;
+	margin-right: 5px;
+}

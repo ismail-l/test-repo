@@ -1,0 +1,2 @@
+serviceClass: tms2.client.service.ProjectService
+path: B9E859AB6CBBA66C011BA068B69A2C98.gwt.rpc

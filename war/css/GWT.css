@@ -1,0 +1,118 @@
+
+
+/* TabLayoutPanel */
+.gwt-TabLayoutPanel
+{
+	width: 100%;
+}
+
+/* the tab bar element */
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs
+{
+	background-color: white;
+}
+
+/* an individual tab */
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab 
+{
+	color: black;
+	margin-right: 7px;
+	cursor: pointer;
+	background-color: #e5e5e5;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	border-bottom-width: 0px;
+}
+
+/* an individual tab, selected */
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected 
+{
+	font-weight: bold;
+	cursor: default;
+	background-color: #FADB05;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	border-bottom-color: silver;
+}
+
+/* an element nested in */
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabInner
+{
+	padding: 7px;
+}
+
+/* each tab (useful for styling); applied to all child content widgets */
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelContent
+{
+	color: black;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	background-color: #efefef;
+	vertical-align: top;
+	padding: 5px;
+}
+
+
+
+
+/* StackPanel */
+
+/* the panel itself */
+.gwt-StackPanel 
+{
+	height: 100%;
+	width: 300px;
+	border-width: 1px;
+	border-color: silver;
+	border-style: solid;	
+}
+
+/* unselected items */
+.gwt-StackPanel .gwt-StackPanelItem 
+{
+	height: 25px;
+	background-color: #e4e2e4;
+	cursor: pointer;
+	padding: 7px;
+	border-top-color: white;
+	border-top-width: 1px;
+	border-top-style: solid;	
+	border-bottom-color: gray;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+/* selected items  */
+.gwt-StackPanel .gwt-StackPanelItem-selected 
+{ 
+	height: 25px;
+	background-color: #FADB05;
+	cursor: default;
+	padding: 7px;
+	border-top-color: white;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-bottom-color: silver;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;	
+}
+
+/* the wrapper around the contents of the item */
+.gwt-StackPanel .gwt-StackPanelContent 
+{
+	background-color: white;
+	padding: 10px;
+	border-bottom-color: silver;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.cw-DockPanel td {
+  border: 1px solid #BBBBBB;
+  padding: 3px;
+}

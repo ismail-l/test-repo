@@ -1,0 +1,2 @@
+serviceClass: tms2.client.service.UserCategoryService
+path: 3ED7D9418CEAE897E093A7E40BC26AB6.gwt.rpc

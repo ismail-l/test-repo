@@ -1,0 +1,2 @@
+serviceClass: tms2.client.service.FieldService
+path: 98BB5AF2AB9A1F18BA165875433246CA.gwt.rpc

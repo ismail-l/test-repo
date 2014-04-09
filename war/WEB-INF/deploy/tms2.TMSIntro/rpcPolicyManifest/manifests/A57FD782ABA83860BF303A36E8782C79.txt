@@ -1,0 +1,2 @@
+serviceClass: tms2.client.service.ExportService
+path: 29BC499B0C39E35BAD6D1ED78051CE09.gwt.rpc

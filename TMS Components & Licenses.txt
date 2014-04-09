@@ -1,0 +1,86 @@
+Autshumato TMS Components & Licenses
+
+The Autshumato Terminology Management System (TMS) is licensed under the Apache License 
+version 2.0. The license is present in the APACHE LICENSE-2.0.txt document.
+
+This document contains a listing of all the components and libraries used. The format 
+is as follows:
+Component/Library name [compact name] (applicable jar)
+	- License and version
+	- Homepage/Project page
+The license of each component is available in the /Documentation/Licenses/ directory.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+PostgreSQL 8.4 JDBC 3 (PostgreSQL link)
+	- BSD license
+	- http://jdbc.postgresql.org/
+
+
+Google Web Toolkit (gwt-servlet.jar, gwt-user.jar, gwt-dev.jar, validation-api-1.0.0.GA.jar)
+	- Apache License 2.0
+	- http://code.google.com/webtoolkit/terms.html
+
+
+Commons fileUpload (commons-fileupload-1.2.2.jar)
+	- Apache License 2.0
+	- http://commons.apache.org/fileupload/
+
+
+Commons IO (commons-io-1.3.1.jar)
+	- Apache License 2.0
+	- http://commons.apache.org/io/
+
+
+gwtupload (gwt-upload-0.6.3-compact.jar)
+	- Apache License 2.0
+	- http://code.google.com/p/gwtupload/
+
+
+Apache log4j (log4j-1.2.16.jar)
+	- Apache License 2.0
+	- http://logging.apache.org/log4j/
+
+
+Sound Library for Google-Web-Toolkit (GWT) [gwt-voices] (gwt-voices-2.0.0.jar)
+	- Apache License 2.0
+	- http://code.google.com/p/gwt-voices/
+
+
+Simple Logging Facade for Java [SLF4j] (slf4j-api-1.6.1.jar, slf4j-log4j12-1.6.1.jar)
+	- MIT License 
+	- http://www.slf4j.org/index.html
+
+
+The OpenDocument API [odfdom] (odfdom.jar)
+	- Apache License 2.0
+	- http://odftoolkit.org/projects/odfdom/pages/Home
+
+
+Apache Xerces XML Project (resolver.jar, serialzer.jar, xercesImpl.jar, xml-apis.jar)
+	- Apache License 2.0
+	http://xerces.apache.org/
+
+		Apache XML Commons Resolver
+			- Apache License 2.0
+			- http://xml.apache.org/commons/components/resolver/
+		Apache Xerces2 Java
+			- Apache License 2.0
+			- http://xerces.apache.org/xerces2-j/
+
+
+Mime Type Detection Utility
+	- Apache License 2.0
+	- http://sourceforge.net/projects/mime-util/
+
+
+SimpleCaptha
+	- BSD license.
+	- http://simplecaptcha.sourceforge.net/
+	
+guava-libraries
+	- Apache License 2.0
+	- http://code.google.com/p/guava-libraries/
+	
+BoneCP
+	- Apache License 2.0
+	- http://jolbox.com/
